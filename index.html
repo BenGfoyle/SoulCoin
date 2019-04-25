@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+  <title>Benjamin Guilfoyle</title>
+  <link rel="stylesheet">
+  <meta charset="utf-8">
+</head>
+<body>
+<h1>Soulcoin</h1>
+<!--User prompt to buy coins-->
+Souls: <input type = "number" placeholder = "1000" max = 1000000><br>
+Payment: <input type = "number" placeholder= "$1?" min= "1"><br>
+<button onclick = "buy()">Buy Soulcoin</button>
+
+<!--Show current safe gas price-->
+<footer>
+    <p id="gasNotif">When placing bets it is recommended to set the gas price to a safe value.
+        <br>The current median gas price is:
+    </p>
+    <p>Source: <a href="https://ethgasstation.info/">ETH Gas Station</a></p>
+    <br>
+    <div id="foot"></div>
+</footer>
+</body>
+</html>
+
+<script src="contract.js"></script>
+<script src="metamask.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/components/dropdown.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/components/search.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.3/components/transition.js"></script>
